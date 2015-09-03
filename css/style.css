@@ -43,35 +43,7 @@ p {
   margin: 0 2% 20px;
 }
 
-@media (min-width: 768px) {
-    .container {
-      width: 750px;
-    }
-  }
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
-    .one-half {
-      width: 46%;
-    }
-    .one-third {
-      width: 29.33333%;
-    }
-    .one-fourth {
-        width: 21%;
-     }
-   }
-   @media (min-width: 1200px) {
-    .container {
-      width: 1170px;
-    }
-  }
-  @media (min-width: 1920px) {
-    .container {
-      width: 1800px;
-    }
-  }
+
 
 /* HEADER */
 header {
@@ -83,15 +55,15 @@ header nav {
   padding: 1em 0;
 }
 header nav ul {
-  display: inline;
-  text-align: right;
-  float: right;
-  margin: 0;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding:0;
 }
 header nav ul > li {
   list-style-type: none;
-  display: inline-block;
-  margin: 0 15px;
+  display: block;
+  margin: 15px 15px;
 }
 header nav ul > li.btn-outline {
   padding: 10px 15px;
@@ -108,6 +80,11 @@ header nav ul > li > a {
 header nav ul > li.btn-outline:hover > a {
   color: #34495E;
 }
+header .site-logo {
+  text-align: center;
+  margin:0 auto;
+  display:block;
+}
 header .hero {
   text-align: center;
   display: block;
@@ -115,6 +92,7 @@ header .hero {
 }
 header .hero h1 {
   font-size: 48px;
+  line-height: 48px;
   font-weight: normal;
   margin: 95px 0 0;
 }
@@ -205,18 +183,18 @@ header .hero img {
   right: 0;
   top: 0;
   text-align: center;
-  margin: 0 -15px 40px;
+  margin: 0 -15px 20px;
   padding: 10px 0;
 }
 .box h4 {
   font-size: 50px;
   font-weight: normal;
-  margin: 40px 0 10px;
+  margin: 20px 0 10px;
   color: #3498DB;
 }
 .box h4 span {
   font-size: 32px;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .box h4 span.month {
   font-family: "Palanquin", Helvetica, Arial, sans-serif;
@@ -227,7 +205,7 @@ header .hero img {
 }
 .box ul li {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: 100;
 }
 .box .btn {
@@ -254,7 +232,7 @@ header .hero img {
 .testimonials ul li {
   list-style-type: none;
 }
-.testimonials: blockquote {
+.testimonials blockquote {
   color: #FFFFFF;
   text-align: left;
   font-style: italic;
@@ -343,7 +321,49 @@ footer .logo {
 
 
 
-
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+    header .site-logo {
+      display:inline-block;
+    }
+    header nav ul {
+      display: inline;
+      text-align: right;
+      float: right;
+      margin: 0;
+    }
+    header nav ul > li {
+      list-style-type: none;
+      display: inline-block;
+      margin: 0 15px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+    .one-half {
+      width: 46%;
+    }
+    .one-third {
+      width: 29.33333%;
+    }
+    .one-fourth {
+        width: 21%;
+     }
+   }
+   @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  @media (min-width: 1920px) {
+    .container {
+      width: 1800px;
+    }
+  }
 
 
 
